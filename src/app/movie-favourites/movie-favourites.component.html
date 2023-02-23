@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let movie of favouriteMoviesList$ | async">
+        <div></div>
+        <div>
+            {{movie.Title}}
+        </div>
+        <div>
+            <button (click)="deleteFavouriteMovie(movie)">❌</button>
+        </div>
+    </li>
+</ul>
